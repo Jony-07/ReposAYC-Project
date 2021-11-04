@@ -95,7 +95,7 @@ public class Frm_Principal extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(29, 128, 194));
+        jPanel2.setBackground(new java.awt.Color(4, 101, 130));
 
         Btn_OutS.setBackground(new java.awt.Color(255, 0, 51));
         Btn_OutS.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -194,7 +194,6 @@ public class Frm_Principal extends javax.swing.JFrame {
                         .addComponent(Btn_Clean)
                         .addGap(25, 25, 25))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
