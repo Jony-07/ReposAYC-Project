@@ -86,9 +86,10 @@ public class Frm_Principal extends javax.swing.JFrame {
         Btn_Ejecutar.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         Btn_Ejecutar.setText("Ejecutar Setencia");
 
-        Btn_Clean.setBackground(new java.awt.Color(37, 165, 163));
+        Btn_Clean.setBackground(new java.awt.Color(255, 0, 51));
+        Btn_Clean.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         Btn_Clean.setForeground(new java.awt.Color(255, 255, 255));
-        Btn_Clean.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clear.png"))); // NOI18N
+        Btn_Clean.setText("Clear");
         Btn_Clean.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_CleanActionPerformed(evt);
