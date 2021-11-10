@@ -18,6 +18,7 @@ public class Frm_Principal extends javax.swing.JFrame {
      */
     public Frm_Principal() {
         initComponents();
+        //Centra la posición al correr el programa
         setLocationRelativeTo(null);
        
     }
@@ -31,7 +32,7 @@ public class Frm_Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        Jp_background = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         Text_receive = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -59,7 +60,7 @@ public class Frm_Principal extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(37, 165, 163));
+        Jp_background.setBackground(new java.awt.Color(37, 165, 163));
 
         Text_receive.setColumns(20);
         Text_receive.setRows(5);
@@ -119,6 +120,7 @@ public class Frm_Principal extends javax.swing.JFrame {
                 Btn_CloseActionPerformed(evt);
             }
         });
+
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 38)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -199,25 +201,30 @@ public class Frm_Principal extends javax.swing.JFrame {
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap())))
+
         );
 
-        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
+        getContentPane().add(Jp_background, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void Btn_CloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_CloseActionPerformed
+        //Cerramos el formulario
         System.exit(0);
     }//GEN-LAST:event_Btn_CloseActionPerformed
+    //Definimos variables de posición
     int xx,xy;
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
         // TODO add your handling code here:
+        //Escuchamos donde están colocados las posiciones del puntero
         xx=evt.getX();
         xy=evt.getY();
     }//GEN-LAST:event_formMousePressed
 
     private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
         // TODO add your handling code here:
+        //Movemos el formulario al presionar donde quereamos, utilizando el puntero
         int x=evt.getXOnScreen();
         int y =evt.getYOnScreen();
         this.setLocation(x-xx,y-xy);
