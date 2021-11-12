@@ -71,7 +71,7 @@ public class Frm_Principal extends javax.swing.JFrame {
         jScrollPane3.setViewportView(Text_send);
 
         Btn_Info.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        Btn_Info.setText("Pasar Información");
+        Btn_Info.setText("Abrir Archivo");
         Btn_Info.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_InfoActionPerformed(evt);
