@@ -1,0 +1,32 @@
+package proyecto_catedra_ayc01t_sl190836_ml190272;
+import java_cup.runtime.Symbol;
+
+parser code
+{:
+    private Symbol s;
+    
+    public void syntax_error(Symbol s){
+        this.s = s;
+    }
+
+    public Symbol getS(){
+        return this.s;
+}
+:};
+
+terminal Linea, T_dato, CREATE, DATABASE, DROP, USE, TABLE, SELECT, All, FROM, WHERE, COMILLA, Parentesis_a, Parentesis_c,
+    Llave_a, Llave_c, Corchete_a, Corchete_c, P_coma, Op_logico, Op_relacional, C_seleccion, Identificador,
+    Numero, ERROR;
+non terminal QUERY;
+start with QUERY;
+
+QUERY ::= 
+    CREATE DATABASE Identificador |
+    DROP Identificador |
+    CREATE TABLE Identificador |
+    USE Identificador |
+    SELECT All FROM Identificador |
+    DROP TABLE |
+    SELECT All FROM Identificador WHERE Identificador Op_relacional COMILLA Identificador COMILLA |
+    SELECT All FROM Identificador WHERE Identificador Op_relacional COMILLA Identificador COMILLA Op_logico Identificador Op_relacional COMILLA Identificador COMILLA
+;
