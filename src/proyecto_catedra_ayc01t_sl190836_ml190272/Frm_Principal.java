@@ -162,7 +162,7 @@ public class Frm_Principal extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(231, 231, 231)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(293, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -182,43 +182,49 @@ public class Frm_Principal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(89, 89, 89)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(Btn_Info, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(41, 41, 41)
-                                    .addComponent(Btn_Lexico, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Btn_Sintactico)
-                                    .addGap(53, 53, 53)
-                                    .addComponent(Btn_Ejecutar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 830, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(Btn_Info, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)
+                        .addComponent(Btn_Clean, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Btn_Lexico, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(461, 461, 461)
-                        .addComponent(Btn_Clean, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(96, Short.MAX_VALUE))
+                        .addComponent(Btn_Sintactico)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Btn_Ejecutar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Btn_Info)
-                    .addComponent(Btn_Lexico)
-                    .addComponent(Btn_Sintactico)
-                    .addComponent(Btn_Ejecutar))
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(Btn_Clean)
-                .addContainerGap())
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(31, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(Btn_Clean)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jScrollPane3)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Btn_Info)
+                                    .addComponent(Btn_Lexico))
+                                .addGap(32, 32, 32)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Btn_Ejecutar)
+                            .addComponent(Btn_Sintactico))
+                        .addGap(31, 31, 31))))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -242,76 +248,334 @@ public class Frm_Principal extends javax.swing.JFrame {
             switch (token) {
                 case Linea:
                     cont++;
-                    resultado += "  LINEA " + cont + "";
+                    resultado += "";
                     break;
                 case T_dato:
-                    resultado += "  <Tipo de dato> " + lexer.lexeme + " ";
+                    resultado += "<DATATYPE>            " + lexer.lexeme + "\n";
                     break;
                 case CREATE:
-                    resultado += "  <CREATE> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case DATABASE:
-                    resultado += "  <DATABASE> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case DROP:
-                    resultado += "  <DROP> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case USE:
-                    resultado += "  <USE> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case TABLE:
-                    resultado += "  <TABLE> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case SELECT:
-                    resultado += "  <SELECT> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case All:
-                    resultado += "  <*> " + lexer.lexeme + " ";
+                    resultado += "<SYMBOL>              " + lexer.lexeme + "\n";
                     break;
                 case FROM:
-                    resultado += "  <FROM> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case WHERE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case COMILLA:
-                    resultado += "  <'> " + lexer.lexeme + " ";
+                    resultado += "<COMILLA_S>           " + lexer.lexeme + "\n";
                     break;
                 case Parentesis_a:
-                    resultado += "  <(> " + lexer.lexeme + " ";
+                    resultado += "<PARENTESIS_A>        " + lexer.lexeme + "\n";
                     break;
                 case Parentesis_c:
-                    resultado += "  <)> " + lexer.lexeme + " ";
+                    resultado += "<PARENTESIS_C>        " + lexer.lexeme + "\n";
                     break;
                 case Llave_a:
-                    resultado += "  <{> " + lexer.lexeme + " ";
+                    resultado += "<LLAVE_A>             " + lexer.lexeme + "\n";
                     break;
                 case Llave_c:
-                    resultado += "  <}> " + lexer.lexeme + " ";
+                    resultado += "<LLAVE_C>             " + lexer.lexeme + "\n";
                     break;
                 case Corchete_a:
-                    resultado += "  <[> " + lexer.lexeme + " ";
+                    resultado += "<CORCHETE_A>          " + lexer.lexeme + "\n";
                     break;
                 case Corchete_c:
-                    resultado += "  <]> " + lexer.lexeme + " ";
+                    resultado += "<CORCHETE_C>          " + lexer.lexeme + "\n";
                     break;
                 case P_coma:
-                    resultado += "  <;> " + lexer.lexeme + " ";
+                    resultado += "<PUNT & COMA>         " + lexer.lexeme + "\n";
                     break;
                 case Op_logico:
-                    resultado += "  <Operador Lógico> " + lexer.lexeme + " ";
+                    resultado += "<O_LOGICO>            " + lexer.lexeme + "\n";
                     break;
                 case Op_relacional:
-                    resultado += "  <Operador Relacional> " + lexer.lexeme + " ";
+                    resultado += "<O_RELACIONAL>        " + lexer.lexeme + "\n";
                     break;
                 case C_seleccion:
-                    resultado += "  <Criterio de Seleccion> " + lexer.lexeme + " ";
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case Identificador:
-                    resultado += "  <Identificador> " + lexer.lexeme + " ";
+                    resultado += "<IDENTIFIER>          " + lexer.lexeme + "\n";
+                    break;
+                case INSERT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case DELETE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case UPDATE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case INTO:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case SET:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case VALUES:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ORDER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case GROUP:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case BY:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case NULL:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case IS:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case AS:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case T_order:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CASE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case SHOW:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case DECLARE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ALTER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case AFTER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case DEFAULT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CHECK:
+                   resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ADD:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case NATURAL:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CROSS:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case INDEX:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case BEGIN:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case COLUMN:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CONNECT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case DISTINCT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case DO:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ELSE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case END:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case EXCEPT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case EXISTS:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case BOOL:
+                    resultado += "<BOOLEAN>             " + lexer.lexeme + "\n";
+                    break;
+                case FIRST:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case FOR:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case FULL:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case FUNCTION:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case HAVING:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ILIKE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case INNER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case INTERSECT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case INTERVAL:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case JOIN:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case IF:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case LR:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ON:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ONLY:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case OTHERS:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case OUT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case OUTER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case OVER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case NEW:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case PRIMARY:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case PRINT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case KEY:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case FOREIGN:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case RESET:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case ROWS:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case RULE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case SEARCH:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case THEN:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case SYSTEM:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case TO:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case GO:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case TRANSACTION:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case TRIGGER:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case UNION:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case UNIQUE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case USING:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case VIEW:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case WHEN:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case WITH:
+                   resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case WRITE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case START:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case PRIOR:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case MODIFY:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case TYPE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case RENAME:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CHANGE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CONSTRAINT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case CONSTRAINT_TYPE:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case FUN:
+                    resultado += "<FUNCTIONS>           " + lexer.lexeme + "\n";
+                    break;
+                case SEPARADOR:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    break;
+                case POINT:
+                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
                     break;
                 case Numero:
-                    resultado += "  <Numero> " + lexer.lexeme + " ";
+                    resultado += "<NUMBER>              " + lexer.lexeme + "\n";
                     break;
                 case ERROR:
-                    resultado += "  <Simbolo no definido> ";
+                    resultado += "<Simbolo no definido> ";
                     break;
                 default:
                     resultado += "  < " + lexer.lexeme + " > ";
@@ -348,6 +612,7 @@ public class Frm_Principal extends javax.swing.JFrame {
         Text_send.setText(null);
         Text_receive.setText(null);
         Text_send.requestFocus();
+        Btn_Ejecutar.setEnabled(false);
     }//GEN-LAST:event_Btn_CleanActionPerformed
 
     private void Btn_InfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_InfoActionPerformed
@@ -371,6 +636,8 @@ public class Frm_Principal extends javax.swing.JFrame {
     private void Btn_LexicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_LexicoActionPerformed
         // TODO add your handling code here:
           try {
+              Text_receive.setForeground(new Color(25, 111, 61));
+              
             analizarLexico();
         } catch (IOException ex) {
             Logger.getLogger(Frm_Principal.class.getName()).log(Level.SEVERE, null, ex);
@@ -385,15 +652,17 @@ public class Frm_Principal extends javax.swing.JFrame {
         try {
             s.parse();
             Text_receive.setText("SINTAXIS CORRECTA.");
-            Text_receive.setForeground(new Color(25, 111, 61));
+            Text_receive.setForeground(new Color(15, 63, 243 ));
             Text_receive.setFont(new Font("Times New Roman", 14, 14));
             Btn_Ejecutar.setEnabled(true);
+            
         } catch (Exception ex) {
             Symbol sym = s.getS();
             
             Text_receive.setText("ERROR SINTÁCTICO. LINEA: " + (sym.right + 1) + " COLUMNA: " + (sym.left + 1) + ", TEXTO: \"" + sym.value + "\"");
             Text_receive.setForeground(Color.red);
             Text_receive.setFont(new Font("Times New Roman", 14, 14));
+            Btn_Ejecutar.setEnabled(false);
         }
     }//GEN-LAST:event_Btn_SintacticoActionPerformed
 
