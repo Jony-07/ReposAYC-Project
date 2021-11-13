@@ -3,9 +3,9 @@ import static proyecto_catedra_ayc01t_sl190836_ml190272.Tokens.*;
 %%
 %class Lexer
 %type Tokens
-L=[a-zA-Z0-9_]+
+L=[a-zA-Z_]+
 D=[0-9]+
-espacio=[ ,\t,\r]+
+espacio=[ \t\r]+
 %{
     public String lexeme;
 %}
@@ -20,8 +20,11 @@ espacio=[ ,\t,\r]+
 /* Salto de linea */
 ( "\n" ) {return Linea;}
 
+/* Operador Operadores */
+( "+" | "-" | "/" ) {lexeme=yytext(); return Operadores;}
+
 /* Tipo de dato */
-( CHAR | VARCHAR | FLOAT | INT | DECIMAL | MONEY | NUMERIC | NCHAR | NVARCHAR ) {lexeme=yytext(); return T_dato;}
+( CHAR | VARCHAR | VARBINARY | BINARY | NCHAR | NVARCHAR ) {lexeme=yytext(); return T_dato;}
 
 /* Palabra reservada CREATE */
 ( CREATE ) {lexeme=yytext(); return CREATE;}
@@ -54,10 +57,10 @@ espacio=[ ,\t,\r]+
 ( "'" ) {lexeme=yytext(); return COMILLA;}
 
 /* Parentesis de apertura */
-( "(" ) {lexeme=yytext(); return Parentesis_a;}
+( "(" ) {lexeme=yytext(); return P_a;}
 
 /* Parentesis de cierre */
-( ")" ) {lexeme=yytext(); return Parentesis_c;}
+( ")" ) {lexeme=yytext(); return P_c;}
 
 /* Llave de apertura */
 ( "{" ) {lexeme=yytext(); return Llave_a;}
@@ -333,7 +336,7 @@ espacio=[ ,\t,\r]+
 ( AVG | COUNT | MIN | MAX | SUM | ROUND  ) {lexeme=yytext(); return FUN;}
 
 /* Palabra reservada SEPARADOR*/
-( "," ) {lexeme=yytext(); return SEPARADOR;}
+( "," ) {lexeme=yytext(); return COMA;}
 
 /* Palabra reservada POINT*/
 ( "." ) {lexeme=yytext(); return POINT;}

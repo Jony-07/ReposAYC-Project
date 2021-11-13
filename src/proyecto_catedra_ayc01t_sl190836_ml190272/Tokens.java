@@ -11,6 +11,7 @@ package proyecto_catedra_ayc01t_sl190836_ml190272;
  */
 public enum Tokens {
     Linea,
+    Operadores,
     T_dato,
     CREATE,
     DATABASE,
@@ -22,8 +23,8 @@ public enum Tokens {
     TABLE,
     WHERE,
     COMILLA,
-    Parentesis_a,
-    Parentesis_c,
+    P_a,
+    P_c,
     Llave_a,
     Llave_c,
     Corchete_a,
@@ -115,7 +116,7 @@ public enum Tokens {
     CONSTRAINT,
     CONSTRAINT_TYPE,
     FUN,
-    SEPARADOR,
+    COMA,
     POINT,
     Identificador,
     Numero,

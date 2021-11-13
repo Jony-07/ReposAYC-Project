@@ -7,9 +7,9 @@ import java_cup.runtime.Symbol;
 %full
 %line
 %char
-L=[a-zA-Z0-9_]+
+L=[a-zA-Z_]+
 D=[0-9]+
-espacio=[ ,\t,\r,\n]+
+espacio=[ \t\r\n]+
 %{
     private Symbol symbol(int type, Object value){
         return new Symbol(type, yyline, yycolumn, value);
@@ -26,8 +26,11 @@ espacio=[ ,\t,\r,\n]+
 /* Comentarios */
 ( "//"(.)* ) {/*Ignore*/}
 
+/* Operador Division */
+( "+" | "-" | "/" ) {return new Symbol(sym.Operadores, yychar, yyline, yytext());}
+
 /* Tipo de dato */
-( CHAR | VARCHAR | FLOAT | INT | DECIMAL | MONEY | NUMERIC | NCHAR | NVARCHAR) {return new Symbol(sym.T_dato, yychar, yyline, yytext());}
+( CHAR | VARCHAR | VARBINARY | BINARY | NCHAR | NVARCHAR ) {return new Symbol(sym.T_dato, yychar, yyline, yytext());}
 
 /* Palabra reservada CREATE */
 ( CREATE ) {return new Symbol(sym.CREATE, yychar, yyline, yytext());}
@@ -60,10 +63,10 @@ espacio=[ ,\t,\r,\n]+
 ( "'" ) {return new Symbol(sym.COMILLA, yychar, yyline, yytext());}
 
 /* Parentesis de apertura */
-( "(" ) {return new Symbol(sym.Parentesis_a, yychar, yyline, yytext());}
+( "(" ) {return new Symbol(sym.P_a, yychar, yyline, yytext());}
 
 /* Parentesis de cierre */
-( ")" ) {return new Symbol(sym.Parentesis_c, yychar, yyline, yytext());}
+( ")" ) {return new Symbol(sym.P_c, yychar, yyline, yytext());}
 
 /* Llave de apertura */
 ( "{" ) {return new Symbol(sym.Llave_a, yychar, yyline, yytext());}
@@ -336,7 +339,7 @@ espacio=[ ,\t,\r,\n]+
 ( AVG | COUNT | MIN | MAX | SUM | ROUND ) {return new Symbol(sym.FUN, yychar, yyline, yytext());}
 
 /* Palabra reservada SEPARADOR */
-( "," ) {return new Symbol(sym.SEPARADOR, yychar, yyline, yytext());}
+( "," ) {return new Symbol(sym.COMA, yychar, yyline, yytext());}
 
 /* Palabra reservada POINT */
 ( "." ) {return new Symbol(sym.POINT, yychar, yyline, yytext());}

@@ -250,6 +250,9 @@ public class Frm_Principal extends javax.swing.JFrame {
                     cont++;
                     resultado += "";
                     break;
+                case Operadores:
+                    resultado += "<OPERATORS>           " + lexer.lexeme + "\n";
+                    break;
                 case T_dato:
                     resultado += "<DATATYPE>            " + lexer.lexeme + "\n";
                     break;
@@ -283,10 +286,10 @@ public class Frm_Principal extends javax.swing.JFrame {
                 case COMILLA:
                     resultado += "<COMILLA_S>           " + lexer.lexeme + "\n";
                     break;
-                case Parentesis_a:
+                case P_a:
                     resultado += "<PARENTESIS_A>        " + lexer.lexeme + "\n";
                     break;
-                case Parentesis_c:
+                case P_c:
                     resultado += "<PARENTESIS_C>        " + lexer.lexeme + "\n";
                     break;
                 case Llave_a:
@@ -565,14 +568,14 @@ public class Frm_Principal extends javax.swing.JFrame {
                 case FUN:
                     resultado += "<FUNCTIONS>           " + lexer.lexeme + "\n";
                     break;
-                case SEPARADOR:
-                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                case COMA:
+                    resultado += "<SYMBOL>                " + lexer.lexeme + "\n";
                     break;
                 case POINT:
-                    resultado += "<RESERVED>            " + lexer.lexeme + "\n";
+                    resultado += "<SYMBOL>                " + lexer.lexeme + "\n";
                     break;
                 case Numero:
-                    resultado += "<NUMBER>              " + lexer.lexeme + "\n";
+                    resultado += "<NUMBER>               " + lexer.lexeme + "\n";
                     break;
                 case ERROR:
                     resultado += "<Simbolo no definido> ";

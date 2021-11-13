@@ -14,20 +14,20 @@ parser code
 }
 :};
 
-terminal Linea, T_dato, CREATE, DATABASE, DROP, USE, TABLE, SELECT, All, FROM, WHERE, COMILLA, Parentesis_a, Parentesis_c,
+terminal Linea, Operadores, T_dato, CREATE, DATABASE, DROP, USE, TABLE, SELECT, All, FROM, WHERE, COMILLA, P_a, P_c,
     Llave_a, Llave_c, Corchete_a, Corchete_c, P_coma, Op_logico, Op_relacional, C_seleccion, INSERT, DELETE, UPDATE, INTO,
     SET, VALUES, ORDER, GROUP, BY, NULL, IS, AS, T_order, CASE, SHOW, DECLARE, ALTER, AFTER, DEFAULT, CHECK, ADD,
     NATURAL, CROSS, INDEX, BEGIN, COLUMN, CONNECT, DISTINCT, DO, ELSE, END, EXCEPT, EXISTS, BOOL, FIRST, FOR, FULL,
     FUNCTION, HAVING, ILIKE, INNER, INTERSECT, INTERVAL, JOIN, IF, LR, ON, ONLY, OTHERS, OUT, OUTER, OVER, NEW,
     PRIMARY, PRINT, KEY, FOREIGN, RESET, ROWS, RULE, SEARCH, THEN, SYSTEM, TO, GO, TRANSACTION, TRIGGER, UNION, UNIQUE,
     USING, VIEW, WHEN, WITH, WRITE, START, PRIOR, MODIFY, TYPE, RENAME, CHANGE, CONSTRAINT, CONSTRAINT_TYPE,
-    FUN, SEPARADOR, POINT, Identificador, Numero, ERROR;
+    FUN, POINT, Identificador, COMA,  Numero, ERROR;
 non terminal QUERY_MAIN, QUERY_ACTIONS, QUERY_TABLE, QUERY_SELECT, QUERY_INSERT, QUERY_DELETE, QUERY_UPDATE, QUERY_WHERE;
 start with QUERY_MAIN;
 
 QUERY_MAIN ::=
     CREATE DATABASE Identificador |
-    USE Identificador|
+    USE Identificador |
     CREATE DATABASE Identificador USE Identificador QUERY_TABLE |
     CREATE DATABASE Identificador USE Identificador |
     USE Identificador DROP DATABASE Identificador |
@@ -43,7 +43,7 @@ QUERY_SELECT ::=
 ;
 QUERY_TABLE ::=
     CREATE TABLE Identificador
-    Parentesis_a Identificador T_dato Parentesis_a Numero Parentesis_c Parentesis_c
+    P_a Identificador T_dato P_a Numero P_c P_c
 ;
 
 QUERY_WHERE ::=
@@ -51,5 +51,5 @@ QUERY_WHERE ::=
 ;
 
 QUERY_INSERT ::=
-    INSERT INTO Identificador VALUES Parentesis_a Identificador Identificador Parentesis_c
+    INSERT INTO Identificador VALUES P_a Identificador Identificador P_c
 ;
