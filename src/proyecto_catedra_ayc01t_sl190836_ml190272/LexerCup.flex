@@ -95,6 +95,9 @@ espacio=[ \t\r\n]+
 /* Palabra reservada INSERT */
 ( INSERT ) {return new Symbol(sym.INSERT, yychar, yyline, yytext());}
 
+/* Palabra reservada REFERENCES */
+( REFERENCES ) {return new Symbol(sym.REFERENCES, yychar, yyline, yytext());}
+
 /* Palabra reservada DELETE */
 ( DELETE ) {return new Symbol(sym.DELETE, yychar, yyline, yytext());}
 

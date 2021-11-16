@@ -580,6 +580,9 @@ public class Frm_Principal extends javax.swing.JFrame {
                 case ERROR:
                     resultado += "<Simbolo no definido> ";
                     break;
+                case REFERENCES:
+                    resultado += "<RESERVED>           " + lexer.lexeme + "\n";
+                    break;
                 default:
                     resultado += "  < " + lexer.lexeme + " > ";
                     break;

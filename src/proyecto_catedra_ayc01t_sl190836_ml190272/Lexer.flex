@@ -248,6 +248,9 @@ espacio=[ \t\r]+
 /* Palabra reservada PRIMARY */
 ( PRIMARY ) {lexeme=yytext(); return PRIMARY;}
 
+/* Palabra reservada PRIMARY */
+( REFERENCES ) {lexeme=yytext(); return REFERENCES;}
+
 /* Palabra reservada PRINT */
 ( PRINT ) {lexeme=yytext(); return PRINT;}
 

@@ -120,5 +120,6 @@ public enum Tokens {
     POINT,
     Identificador,
     Numero,
-    ERROR
+    ERROR,
+    REFERENCES 
 }
