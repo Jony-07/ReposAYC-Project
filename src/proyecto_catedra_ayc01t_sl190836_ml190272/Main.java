@@ -16,9 +16,9 @@ import java.nio.file.Paths;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        String ruta1 = "C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/Lexer.flex";
-        String ruta2 = "C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/LexerCup.flex";
-        String[] rutaS = {"-parser", "Sintax", "C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/Sintax.cup"};
+        String ruta1 = "C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/Lexer.flex";
+        String ruta2 = "C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/LexerCup.flex";
+        String[] rutaS = {"-parser", "Sintax", "C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/Sintax.cup"};
         generar(ruta1, ruta2, rutaS);
     }
     public static void generar(String ruta1, String ruta2, String[] rutaS) throws IOException, Exception{
@@ -29,21 +29,21 @@ public class Main {
         JFlex.Main.generate(archivo);
         java_cup.Main.main(rutaS);
         
-        Path rutaSym = Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/sym.java");
+        Path rutaSym = Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/sym.java");
         if (Files.exists(rutaSym)) {
             Files.delete(rutaSym);
         }
         Files.move(
-                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/sym.java"), 
-                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/sym.java")
+                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/sym.java"), 
+                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/sym.java")
         );
-        Path rutaSin = Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/Sintax.java");
+        Path rutaSin = Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/Sintax.java");
         if (Files.exists(rutaSin)) {
             Files.delete(rutaSin);
         }
         Files.move(
-                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/Sintax.java"), 
-                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project/src/proyecto_catedra_ayc01t_sl190836_ml190272/Sintax.java")
+                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/Sintax.java"), 
+                Paths.get("C:/Users/Vere/OneDrive/Documentos/NetBeansProjects/ReposAYC-Project-CodeMain/src/proyecto_catedra_ayc01t_sl190836_ml190272/Sintax.java")
         );
     }
 }

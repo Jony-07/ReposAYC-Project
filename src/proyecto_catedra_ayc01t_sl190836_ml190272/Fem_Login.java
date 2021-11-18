@@ -35,10 +35,10 @@ public class Fem_Login extends javax.swing.JFrame {
         label1 = new java.awt.Label();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         Btn_Session = new javax.swing.JButton();
         Btn_Close = new javax.swing.JButton();
+        jPasswordField1 = new javax.swing.JPasswordField();
 
         jPanel2.setForeground(new java.awt.Color(50, 130, 181));
 
@@ -91,15 +91,17 @@ public class Fem_Login extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("CONTRASEÑA");
 
-        jTextField1.setBackground(new java.awt.Color(37, 165, 163));
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-
         jTextField2.setBackground(new java.awt.Color(37, 165, 163));
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
 
         Btn_Session.setBackground(new java.awt.Color(37, 165, 163));
         Btn_Session.setForeground(new java.awt.Color(255, 255, 255));
         Btn_Session.setText("Iniciar Sesión");
+        Btn_Session.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Btn_SessionMouseClicked(evt);
+            }
+        });
         Btn_Session.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_SessionActionPerformed(evt);
@@ -116,6 +118,8 @@ public class Fem_Login extends javax.swing.JFrame {
             }
         });
 
+        jPasswordField1.setBackground(new java.awt.Color(37, 165, 163));
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -123,17 +127,6 @@ public class Fem_Login extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(49, 49, 49))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(Btn_Session, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(81, 81, 81))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -150,7 +143,18 @@ public class Fem_Login extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Btn_Close)))
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addComponent(Btn_Session, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(81, 81, 81))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(49, 49, 49))))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -166,9 +170,9 @@ public class Fem_Login extends javax.swing.JFrame {
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
+                .addGap(28, 28, 28)
+                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(Btn_Session, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(60, Short.MAX_VALUE))
         );
@@ -181,15 +185,26 @@ public class Fem_Login extends javax.swing.JFrame {
     private void Btn_SessionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SessionActionPerformed
         // TODO add your handling code here:
       
-       Frm_Principal log = new Frm_Principal();
-       log.setVisible(true);
-       dispose();
+      // Frm_Principal log = new Frm_Principal();
+       //log.setVisible(true);
+      // dispose();
     }//GEN-LAST:event_Btn_SessionActionPerformed
 
     private void Btn_CloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_CloseActionPerformed
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_Btn_CloseActionPerformed
+
+    private void Btn_SessionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Btn_SessionMouseClicked
+        // TODO add your handling code here:
+        ConnectionTest Con = new ConnectionTest();
+        Con.conectarlogin();
+        
+        if(Con.login(jTextField2.getText(), jPasswordField1.getText()) == 1){
+            MP.setVisible(true);
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_Btn_SessionMouseClicked
 
     /**
      * @param args the command line arguments
@@ -221,11 +236,13 @@ public class Fem_Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Fem_Login().setVisible(true);
+                L.setVisible(true);
             }
         });
     }
 
+    public static Fem_Login L = new Fem_Login();
+    public static Frm_Principal MP = new Frm_Principal();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Close;
     private javax.swing.JButton Btn_Session;
@@ -235,7 +252,7 @@ public class Fem_Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField2;
     private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables

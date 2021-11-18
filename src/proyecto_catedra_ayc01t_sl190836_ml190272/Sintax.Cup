@@ -140,6 +140,7 @@ QUERY_MAIN ::=
     USE Identificador QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE |
     USE Identificador QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE |
     USE Identificador QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE QUERY_UPDATE |
+    QUERY_SELECT |
 
 
 ;
@@ -155,7 +156,8 @@ QUERY_SELECT ::=
     SELECT All FROM Identificador WHERE Identificador C_seleccion Numero Op_logico Numero ORDER BY Identificador T_order |
     SELECT Identificador POINT Identificador COMA Identificador POINT Identificador FROM Identificador WHERE Identificador C_seleccion Numero Op_logico Numero ORDER BY Identificador T_order |
     SELECT Identificador POINT Identificador COMA FUN P_a Identificador POINT Identificador P_c AS Identificador FROM Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador GROUP BY Identificador POINT Identificador COMA Identificador POINT Identificador |
-    SELECT Identificador POINT Identificador COMA Identificador POINT Identificador FROM Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador WHERE Identificador POINT Identificador Op_relacional COMILLA Identificador COMILLA
+    SELECT Identificador POINT Identificador COMA Identificador POINT Identificador FROM Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador INNER JOIN Identificador ON Identificador POINT Identificador Op_relacional Identificador POINT Identificador WHERE Identificador POINT Identificador Op_relacional COMILLA Identificador COMILLA |
+    SELECT All FROM Identificador WHERE Identificador Op_relacional COMILLA Identificador COMILLA 
 ;
 QUERY_TABLE ::=
     CREATE TABLE Identificador P_a Identificador T_dato P_a Numero P_c P_c |
